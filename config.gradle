@@ -1,0 +1,119 @@
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+ext {
+    apkNamePrefix = "CurrencyRatesCalculator"
+
+    // Android
+    minSdkVersion = 21
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+
+    gradlePlugin = "3.0.1"
+    kotlinLanguage = "1.2.10"
+
+    // Libraries
+    supportLibrary = "27.0.2"
+    constraintLayout = "1.1.0-beta3"
+
+    retrofit = "2.3.0"
+    okHttp = "3.8.0"
+    gson = "2.8.2"
+
+    rxJava = "2.1.5"
+    rxAndriod = "2.0.1"
+    rxKotlin = "2.1.0"
+
+    // DI
+    dagger = "2.12"
+    javaxAnnotation = '1.0'
+    javaxInject = '1'
+
+    archComponents = "1.0.0"
+
+    glide = "4.2.0"
+    adapterDelegates = "3.0.1"
+
+    timber = "4.6.0"
+
+    // Test
+    jUnit = "5.0.1"
+    jUnitRunner = "1.0.1"
+    jUnitAndroid = "1.0.11"
+    mockitoCore = "2.8.47"
+    mockitoKotlin = "1.5.0"
+
+    // Development
+    rxLint = "1.6"
+    okHttpLogging = "2.0.3"
+    multiDex = "1.0.2"
+    debugDb = "1.0.1"
+
+    appDependencies = [
+            // Google
+            supportLib            : "com.android.support:support-v4:$supportLibrary",
+            recyclerView          : "com.android.support:recyclerview-v7:$supportLibrary",
+            supportDesign         : "com.android.support:design:$supportLibrary",
+            constraintLayout      : "com.android.support.constraint:constraint-layout:$constraintLayout",
+
+            // Kotlin
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlinLanguage",
+
+            // Retrofit
+            retrofit              : "com.squareup.retrofit2:retrofit:$retrofit",
+            retrofitGson          : "com.squareup.retrofit2:converter-gson:$retrofit",
+            retrofitRxJava        : "com.squareup.retrofit2:adapter-rxjava2:$retrofit",
+            gson                  : "com.google.code.gson:gson:$gson",
+
+            // OkHttp
+            okHttp                : "com.squareup.okhttp3:okhttp:$okHttp",
+            okHttpLogging         : "com.github.ihsanbal:LoggingInterceptor:$okHttpLogging",
+
+            // RxJava
+            rxJava                : "io.reactivex.rxjava2:rxjava:$rxJava",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:$rxAndriod",
+            rxKotlin              : "io.reactivex.rxjava2:rxkotlin:$rxKotlin",
+
+            // DI
+            dagger                : "com.google.dagger:dagger:$dagger",
+            daggerCompiler        : "com.google.dagger:dagger-compiler:$dagger",
+            daggerAndroidSupport  : "com.google.dagger:dagger-android-support:$dagger",
+            daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:$dagger",
+            javaxAnnotation       : "javax.annotation:jsr250-api:${javaxAnnotation}",
+            javaxInject           : "javax.inject:javax.inject:${javaxInject}",
+
+            // Room
+            roomRuntime           : "android.arch.persistence.room:runtime:$archComponents",
+            roomRxJava            : "android.arch.persistence.room:rxjava2:$archComponents",
+            roomCompiler          : "android.arch.persistence.room:compiler:$archComponents",
+
+            //Image Loader (Glide)
+            glide                 : "com.github.bumptech.glide:glide:$glide",
+            glideCompiler         : "com.github.bumptech.glide:compiler:$glide",
+
+            adapterDelegates      : "com.hannesdorfmann:adapterdelegates3:$adapterDelegates",
+
+            timber                : "com.jakewharton.timber:timber:$timber",
+
+            // Development
+            rxLint                : "nl.littlerobots.rxlint:rxlint:$rxLint",
+            multiDex              : "com.android.support:multidex:$multiDex",
+            debugDb               : "com.amitshekhar.android:debug-db:$debugDb",
+
+            // Test
+            jUnitApi              : "org.junit.jupiter:junit-jupiter-api:$jUnit",
+            jUnitEngine           : "org.junit.jupiter:junit-jupiter-engine:$jUnit",
+            jUnitRunner           : "org.junit.platform:junit-platform-runner:$jUnitRunner",
+            jUnitEmbeddedRuntime  : "de.mannodermaus.gradle.plugins:android-junit5-embedded-runtime:$jUnitAndroid",
+
+            mockitoCore           : "org.mockito:mockito-inline:$mockitoCore",
+            mockitoKotlin         : "com.nhaarman:mockito-kotlin-kt1.1:$mockitoKotlin",
+
+    ]
+}
