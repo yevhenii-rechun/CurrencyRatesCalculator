@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CurrencyExchange</string>
+    <string name="currency_calculator_screen_input_hint">Enter value</string>
+    <string name="currency_calculator_screen_content_desctiption_currency_flag">Currency country flag</string>
+    <string name="error_network_no_internet_connection">No internet connection!</string>
+    <string name="action_reload">Reload</string>
+
+    <string name="currency_aud">Australian Dollar</string>
+    <string name="currency_bgn">Bulgarian Lev</string>
+    <string name="currency_brl">Brazilian Real</string>
+    <string name="currency_cad">Canadian Dollar</string>
+    <string name="currency_chf">Swiss Franc</string>
+    <string name="currency_cny">Yuan Renminbi</string>
+    <string name="currency_czk">Czech Koruna</string>
+    <string name="currency_dkk">Danish Krone</string>
+    <string name="currency_gbp">Pound Sterling</string>
+    <string name="currency_hkd">Hong Kong Dollar</string>
+    <string name="currency_hrk">Kuna</string>
+    <string name="currency_huf">Forint</string>
+    <string name="currency_idr">Rupiah</string>
+    <string name="currency_ils">New Israeli Sheqel</string>
+    <string name="currency_inr">Indian Rupee</string>
+    <string name="currency_jpy">Yen</string>
+    <string name="currency_krw">Won</string>
+    <string name="currency_mxn">Mexican Peso</string>
+    <string name="currency_myr">Malaysian Ringgit</string>
+    <string name="currency_nok">Norwegian Krone</string>
+    <string name="currency_nzd">New Zealand Dollar</string>
+    <string name="currency_php">Philippine Peso</string>
+    <string name="currency_pln">Zloty</string>
+    <string name="currency_ron">Romanian Leu</string>
+    <string name="currency_rub">Russian Ruble</string>
+    <string name="currency_sek">Swedish Krona</string>
+    <string name="currency_sgd">Singapore Dollar</string>
+    <string name="currency_thb">Baht</string>
+    <string name="currency_try">Turkish Lira</string>
+    <string name="currency_zar">Rand</string>
+    <string name="currency_eur">Euro</string>
+    <string name="currency_usd">US Dollar</string>
+
+</resources>

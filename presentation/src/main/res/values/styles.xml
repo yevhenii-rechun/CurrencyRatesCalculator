@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Rates" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Rates.Toolbar">
+        <item name="titleTextAppearance">@style/ToolbarTextAppearance.Title</item>
+    </style>
+
+    <style name="Rates.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Rates.ToolbarPopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Rates.TextAppearance" parent="@android:style/TextAppearance" />
+
+    <style name="Rates.TextAppearance.Regular">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="Rates.TextAppearance.Regular.Normal">
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="Rates.TextAppearance.Regular.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarTextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ToolbarTextAppearance.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

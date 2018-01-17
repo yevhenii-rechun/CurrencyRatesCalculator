@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'de.mannodermaus.android-junit5'
+
+def globalConf = rootProject.ext
+
+android {
+    compileSdkVersion globalConf.compileSdkVersion
+    defaultConfig {
+        minSdkVersion globalConf.minSdkVersion
+        targetSdkVersion globalConf.targetSdkVersion
+
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/java'
+    }
+
+}
+
+kapt {
+    correctErrorTypes = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Kotlin
+    implementation appDependencies.kotlin
+
+    // Retrofit
+    api appDependencies.retrofit
+    api appDependencies.retrofitGson
+    api appDependencies.retrofitRxJava
+    api appDependencies.gson
+
+    // OkHttp
+    implementation appDependencies.okHttp
+    implementation(appDependencies.okHttpLogging) {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    // RxJava
+    implementation appDependencies.rxJava
+    implementation appDependencies.rxKotlin
+
+    // Dagger
+    implementation appDependencies.dagger
+    kapt appDependencies.daggerCompiler
+    implementation appDependencies.daggerAndroidSupport
+    kapt appDependencies.daggerAndroidProcessor
+
+    implementation appDependencies.timber
+
+    // Tests
+    testImplementation appDependencies.jUnitApi
+    testCompileOnly appDependencies.jUnitEmbeddedRuntime
+    testImplementation appDependencies.mockitoCore
+    testImplementation appDependencies.mockitoKotlin
+
+}
