@@ -6,6 +6,7 @@ import com.ihsanbal.logging.Level
 import com.ihsanbal.logging.LoggingInterceptor
 import com.veon.magri.margiandroid.data.BuildConfig
 import com.zetokz.data.network.CurrencyRateService
+import com.zetokz.data.network.HealthCheckerService
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -63,6 +64,9 @@ class NetworkModule {
     internal fun provideBaseUrl() = "https://revolut.duckdns.org" //have to be moved to config file
 
     @Provides @Singleton
-    internal fun provideNotificationService(retrofit: Retrofit) = retrofit.create(CurrencyRateService::class.java)
+    internal fun provideCurrencyRateService(retrofit: Retrofit) = retrofit.create(CurrencyRateService::class.java)
+
+    @Provides @Singleton
+    internal fun provideHealthCheckerService(retrofit: Retrofit) = retrofit.create(HealthCheckerService::class.java)
 
 }
