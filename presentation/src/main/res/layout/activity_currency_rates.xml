@@ -22,6 +22,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
@@ -32,7 +33,12 @@
             app:actionText="@string/action_reload"
             app:text="@string/error_network_no_internet_connection" />
 
-        <include layout="@layout/item_currency_input" />
+        <include
+            layout="@layout/item_currency_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal"
+            android:layout_marginRight="@dimen/normal" />
 
         <View
             android:layout_width="match_parent"
@@ -41,11 +47,20 @@
             android:layout_marginRight="@dimen/normal"
             android:background="@color/gray_light" />
 
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/normal"
+            android:visibility="gone" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/list_currency_rates"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
+            android:visibility="gone"
             app:layoutManager="LinearLayoutManager"
             app:spanCount="1" />
 
