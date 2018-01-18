@@ -49,6 +49,7 @@ class CurrencyRatesPresenter @Inject constructor(
     override fun onFirstViewAttach() {
         observeCurrencies()
         observeAmountChanges()
+        observeRequestStatus()
         viewState.showBase(CurrencyInputItem(baseCurrency, baseAmount.value))
     }
 
@@ -100,6 +101,12 @@ class CurrencyRatesPresenter @Inject constructor(
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(::handleAmountChanges, ::handleError)
         disposables += amountDisposable
+    }
+
+    private fun observeRequestStatus() {
+        disposables += currencyRatesInteractor.observeRequestStatus()
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(viewState::toggleRequestStatusProgress, Timber::d)
     }
 
     private fun restoreLastBaseCurrency() {

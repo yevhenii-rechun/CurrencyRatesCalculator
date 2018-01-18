@@ -14,7 +14,6 @@ open class SimpleListIdentifiableAdapter : ListDelegationAdapter<List<Identifiab
         items = listOf()
     }
 
-    //todo move internal logic to separate thread
     fun dispatchNewItems(items: List<Identifiable>) {
         val diff = DiffUtil.calculateDiff(SimpleDiffUtilCallback(this.items, items))
         this.items = items

@@ -11,7 +11,7 @@ import com.zetokz.currencyexchange.presentation.model.Identifiable
 import com.zetokz.currencyexchange.presentation.util.extension.bindView
 
 /**
- * Created by Denys Nykyforov on 12/07/17.
+ * Created by Yevhenii Rechun on 1/16/18.
  * Copyright © 2017. All rights reserved.
  */
 internal class CurrencyRateAdapterDelegate :

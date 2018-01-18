@@ -15,4 +15,6 @@
     <dimen name="text_large">19sp</dimen>
     <dimen name="icon_default_size">56dp</dimen>
 
+    <dimen name="toolbar_progress_size">24dp</dimen>
+
 </resources>

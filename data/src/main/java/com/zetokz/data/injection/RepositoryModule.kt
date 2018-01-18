@@ -8,8 +8,8 @@ import dagger.Binds
 import dagger.Module
 
 /**
- * Created by Denys Nykyforov on 23.11.2017
- * Copyright (c) 2017. All right reserved
+ * Created by Yevhenii Rechun on 1/17/18.
+ * Copyright © 2017. All rights reserved.
  */
 @Module
 abstract class RepositoryModule {

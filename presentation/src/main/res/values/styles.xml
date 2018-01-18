@@ -30,7 +30,7 @@
     </style>
 
     <style name="ToolbarTextAppearance">
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/colorAccent</item>
     </style>
 
     <style name="ToolbarTextAppearance.Title">

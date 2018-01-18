@@ -22,4 +22,6 @@ interface CurrencyRatesView : BaseView {
     fun hideOfflineView()
 
     fun toggleConnectionProgress(show: Boolean)
+
+    fun toggleRequestStatusProgress(show: Boolean)
 }

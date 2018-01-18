@@ -4,8 +4,8 @@ import android.text.Editable
 import android.text.TextWatcher
 
 /**
- * Created by Denys Nykyforov on 31.10.2017
- * Copyright (c) 2017. All right reserved
+ * Created by Yevhenii Rechun on 1/16/18.
+ * Copyright © 2017. All rights reserved.
  */
 class SimpleTextWatcher(
     private val beforeTextChangedAction: SimpleTextWatcher.(s: CharSequence?, start: Int, count: Int, after: Int) -> Unit = { _, _, _, _ -> },
