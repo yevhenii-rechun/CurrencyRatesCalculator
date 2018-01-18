@@ -21,6 +21,10 @@ import com.zetokz.currencyexchange.presentation.util.list.SpacingItemDecoration
 import com.zetokz.currencyexchange.presentation.widget.FixedMessageView
 import javax.inject.Inject
 
+/**
+ * Created by Yevhenii Rechun on 1/16/18.
+ * Copyright © 2017. All rights reserved.
+ */
 class CurrencyRatesActivity : BaseActivity(), CurrencyRatesView {
 
     private val progress: ProgressBar by bindView(R.id.progress)
@@ -61,8 +65,11 @@ class CurrencyRatesActivity : BaseActivity(), CurrencyRatesView {
         else viewConnectionError.hideProgress()
     }
 
+    override fun toggleRequestStatusProgress(show: Boolean) {
+        progress.changeVisibility(show, true)
+    }
+
     override fun showCurrencies(currencyItems: List<CurrencyItem>) {
-        progress.changeVisibility(false)
         listCurrencyRates.changeVisibility(true)
         currencyRatesAdapter.dispatchNewItems(currencyItems)
     }
@@ -91,13 +98,14 @@ class CurrencyRatesActivity : BaseActivity(), CurrencyRatesView {
             })
         }
         inputValue.addTextChangedListener(SimpleTextWatcher(afterTextChangedAction = {
-            presenter.onBaseAmountChanged(it.toString().toDouble())
+            if (it.isNullOrBlank()) inputValue.setText("0")
+            else presenter.onBaseAmountChanged(it.toString().toDouble())
         }))
         viewConnectionError.actionClickListener = presenter::onRetryConnectionClicked
     }
 
     private fun initToolbar() {
         setSupportActionBar(toolbar)
-        title = "Rates & Conversion"
+        title = getString(R.string.currency_calculator_screen_title)
     }
 }

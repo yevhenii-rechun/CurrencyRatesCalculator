@@ -9,7 +9,7 @@ import com.zetokz.currencyexchange.presentation.model.CurrencyItem
  */
 class CurrencyRateAdapter(
     onCurrencyClickedAction: (CurrencyItem) -> Unit
-) : SimpleListIdentifiableAdapter() {
+) : SimpleListIdentifiableAdapter() { //todo: need to test performance with QueueAdapter
 
     init {
         delegatesManager.addDelegate(CurrencyRateAdapterDelegate().apply {

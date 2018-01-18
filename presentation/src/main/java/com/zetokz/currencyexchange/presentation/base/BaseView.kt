@@ -3,8 +3,8 @@ package com.zetokz.currencyexchange.presentation.base
 import com.arellomobile.mvp.MvpView
 
 /**
- * Created by Denys Nykyforov on 24.10.2017
- * Copyright (c) 2017. All right reserved
+ * Created by Yevhenii Rechun on 1/16/18.
+ * Copyright © 2017. All rights reserved.
  */
 interface BaseView : MvpView {
 

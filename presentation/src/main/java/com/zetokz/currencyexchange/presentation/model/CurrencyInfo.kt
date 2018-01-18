@@ -44,8 +44,8 @@ enum class CurrencyInfo(
     THB("THB", R.string.currency_thb, R.drawable.ic_thb_th),
     TRY("TRY", R.string.currency_try, R.drawable.ic_try_tr),
     ZAR("ZAR", R.string.currency_zar, R.drawable.ic_zar_za),
-    EUR("EUR", R.string.currency_eur, R.drawable.ic_usd_us),//todo add icon for this currency
-    USD("USD", R.string.currency_usd, R.drawable.ic_usd_us);//todo add icon for this currency
+    EUR("EUR", R.string.currency_eur, R.drawable.ic_eur_eu),
+    USD("USD", R.string.currency_usd, R.drawable.ic_usd_us);
 
     companion object {
 

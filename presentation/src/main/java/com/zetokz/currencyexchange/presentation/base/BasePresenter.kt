@@ -4,11 +4,16 @@ import com.arellomobile.mvp.MvpPresenter
 import io.reactivex.disposables.CompositeDisposable
 
 /**
- * Created by Denys Nykyforov on 24.10.2017
- * Copyright (c) 2017. All right reserved
+ * Created by Yevhenii Rechun on 1/16/18.
+ * Copyright © 2017. All rights reserved.
  */
 abstract class BasePresenter<V : BaseView> : MvpPresenter<V>() {
 
     protected val disposables by lazy(::CompositeDisposable)
+
+    override fun onDestroy() {
+        super.onDestroy()
+        disposables.clear()
+    }
 
 }

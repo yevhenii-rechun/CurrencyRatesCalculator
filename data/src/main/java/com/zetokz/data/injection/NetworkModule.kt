@@ -4,11 +4,12 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.ihsanbal.logging.Level
 import com.ihsanbal.logging.LoggingInterceptor
-import com.veon.magri.margiandroid.data.BuildConfig
+import com.zetokz.data.BuildConfig
 import com.zetokz.data.network.CurrencyRateService
 import com.zetokz.data.network.HealthCheckerService
 import dagger.Module
 import dagger.Provides
+import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.internal.platform.Platform
 import retrofit2.CallAdapter
@@ -26,7 +27,7 @@ import javax.inject.Singleton
 class NetworkModule {
 
     @Provides @Singleton
-    internal fun provideHttpLogInterceptor(): LoggingInterceptor = LoggingInterceptor.Builder()
+    internal fun provideHttpLogInterceptor(): Interceptor = LoggingInterceptor.Builder()
         .loggable(BuildConfig.DEBUG)
         .setLevel(Level.BASIC)
         .log(Platform.INFO)
@@ -35,13 +36,12 @@ class NetworkModule {
         .build()
 
     @Provides @Singleton
-    internal fun provideOkHttp(): OkHttpClient = OkHttpClient.Builder()
-        .addInterceptor(provideHttpLogInterceptor())
+    internal fun provideOkHttp(interceptor: Interceptor): OkHttpClient = OkHttpClient.Builder()
+        .addInterceptor(interceptor)
         .build()
 
     @Provides
-    internal fun provideRxCallAdapterFactory(gson: Gson): CallAdapter.Factory =
-        RxJava2CallAdapterFactory.create()
+    internal fun provideRxCallAdapterFactory(gson: Gson): CallAdapter.Factory = RxJava2CallAdapterFactory.create()
 
     @Provides @Singleton
     internal fun provideRetrofit(

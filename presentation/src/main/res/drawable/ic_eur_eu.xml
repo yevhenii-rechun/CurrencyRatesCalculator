@@ -1,0 +1,741 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="160dp"
+    android:height="100dp"
+    android:viewportHeight="20"
+    android:viewportWidth="32">
+    <group android:name="group" />
+    <group android:name="group_1" />
+    <group android:name="flags">
+        <group android:name="flag_of_europe">
+            <path
+                android:name="rectangle_path"
+                android:fillColor="#003399"
+                android:pathData="M 0 0 L 32 0 L 32 20 L 0 20 Z"
+                android:strokeWidth="1" />
+            <group android:name="group_2">
+                <group android:name="s_link">
+                    <group android:name="s">
+                        <group android:name="c">
+                            <group android:name="t_link">
+                                <path
+                                    android:name="t_1"
+                                    android:fillColor="#FFCC00"
+                                    android:pathData="M 16 2.222 L 16.343 3.279 L 15.815 3.451 Z"
+                                    android:strokeWidth="1" />
+                            </group>
+                        </group>
+                        <group android:name="a">
+                            <group android:name="c_link">
+                                <group android:name="c_1">
+                                    <group android:name="t_link_1">
+                                        <path
+                                            android:name="t_3"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 17.057 2.99 L 16.158 3.643 L 15.831 3.194 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="c_link_1">
+                                <group android:name="c_2">
+                                    <group android:name="t_link_2">
+                                        <path
+                                            android:name="t_5"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 16.653 4.232 L 15.754 3.579 L 16.081 3.13 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                        <group android:name="a_link">
+                            <group android:name="a_1">
+                                <group android:name="c_link_2">
+                                    <group android:name="c_3">
+                                        <path
+                                            android:name="t_6"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 14.943 2.99 L 16.054 2.99 L 16.054 3.546 Z"
+                                            android:strokeWidth="1" />
+                                        <group android:name="t_link_3"></group>
+                                    </group>
+                                </group>
+                                <group android:name="c_link_3">
+                                    <group android:name="c_4">
+                                        <group android:name="t_link_4">
+                                            <path
+                                                android:name="t_9"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 15.347 4.232 L 16.246 3.579 L 15.919 3.13 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                    </group>
+                </group>
+                <group android:name="s_link_1">
+                    <group android:name="s_1">
+                        <group android:name="c_5">
+                            <group android:name="t_link_5">
+                                <path
+                                    android:name="t_11"
+                                    android:fillColor="#FFCC00"
+                                    android:pathData="M 16 15.556 L 16.343 16.612 L 15.815 16.784 Z"
+                                    android:strokeWidth="1" />
+                            </group>
+                        </group>
+                        <group android:name="a_2">
+                            <group android:name="c_link_4">
+                                <group android:name="c_6">
+                                    <group android:name="t_link_6">
+                                        <path
+                                            android:name="t_13"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 17.057 16.323 L 16.158 16.976 L 15.831 16.527 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="c_link_5">
+                                <group android:name="c_7">
+                                    <group android:name="t_link_7">
+                                        <path
+                                            android:name="t_15"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 16.653 17.566 L 15.754 16.912 L 16.081 16.463 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                        <group android:name="a_link_1">
+                            <group android:name="a_3">
+                                <group android:name="c_link_6">
+                                    <group android:name="c_8">
+                                        <group android:name="t_link_8">
+                                            <path
+                                                android:name="t_17"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 14.943 16.323 L 15.842 16.976 L 16.169 16.527 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                                <group android:name="c_link_7">
+                                    <group android:name="c_9">
+                                        <group android:name="t_link_9">
+                                            <path
+                                                android:name="t_19"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 15.347 17.566 L 16.246 16.912 L 15.919 16.463 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                    </group>
+                </group>
+                <group android:name="l">
+                    <group android:name="s_link_2">
+                        <group android:name="s_2">
+                            <group android:name="c_10">
+                                <group android:name="t_link_10">
+                                    <path
+                                        android:name="t_21"
+                                        android:fillColor="#FFCC00"
+                                        android:pathData="M 9.333 8.889 L 9.677 9.946 L 9.148 10.117 Z"
+                                        android:strokeWidth="1" />
+                                </group>
+                            </group>
+                            <group android:name="a_4">
+                                <group android:name="c_link_8">
+                                    <group android:name="c_11">
+                                        <group android:name="t_link_11">
+                                            <path
+                                                android:name="t_23"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 10.39 9.657 L 9.491 10.31 L 9.165 9.86 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                                <group android:name="c_link_9">
+                                    <group android:name="c_12">
+                                        <group android:name="t_link_12">
+                                            <path
+                                                android:name="t_25"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 9.986 10.899 L 9.088 10.246 L 9.414 9.796 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="a_link_2">
+                                <group android:name="a_5">
+                                    <group android:name="c_link_10">
+                                        <group android:name="c_13">
+                                            <group android:name="t_link_13">
+                                                <path
+                                                    android:name="t_27"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 8.277 9.657 L 9.176 10.31 L 9.502 9.86 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="c_link_11">
+                                        <group android:name="c_14">
+                                            <group android:name="t_link_14">
+                                                <path
+                                                    android:name="t_29"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 8.68 10.899 L 9.579 10.246 L 9.253 9.796 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="s_link_3">
+                        <group android:name="s_3">
+                            <group android:name="c_15">
+                                <group android:name="t_link_15">
+                                    <path
+                                        android:name="t_31"
+                                        android:fillColor="#FFCC00"
+                                        android:pathData="M 12.014 5.125 L 12.357 4.069 L 12.885 4.24 Z"
+                                        android:strokeWidth="1" />
+                                </group>
+                            </group>
+                            <group android:name="a_6">
+                                <group android:name="c_link_12">
+                                    <group android:name="c_16">
+                                        <group android:name="t_link_16">
+                                            <path
+                                                android:name="t_33"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 11.61 3.883 L 12.721 3.883 L 12.721 4.439 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                                <group android:name="c_link_13">
+                                    <group android:name="c_17">
+                                        <group android:name="t_link_17">
+                                            <path
+                                                android:name="t_35"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 12.667 3.115 L 13.01 4.172 L 12.482 4.344 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="a_link_3">
+                                <group android:name="a_7">
+                                    <group android:name="c_link_14">
+                                        <group android:name="c_18">
+                                            <group android:name="t_link_18">
+                                                <path
+                                                    android:name="t_37"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 13.32 5.125 L 12.976 4.069 L 12.448 4.24 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="c_link_15">
+                                        <group android:name="c_19">
+                                            <group android:name="t_link_19">
+                                                <path
+                                                    android:name="t_39"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 13.723 3.883 L 12.612 3.883 L 12.612 4.439 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="s_link_4">
+                        <group android:name="s_4">
+                            <group android:name="c_20">
+                                <group android:name="t_link_20">
+                                    <path
+                                        android:name="t_41"
+                                        android:fillColor="#FFCC00"
+                                        android:pathData="M 10.88 7.566 L 9.981 6.912 L 10.307 6.463 Z"
+                                        android:strokeWidth="1" />
+                                </group>
+                            </group>
+                            <group android:name="a_8">
+                                <group android:name="c_link_16">
+                                    <group android:name="c_21">
+                                        <group android:name="t_link_21">
+                                            <path
+                                                android:name="t_43"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 9.573 7.566 L 9.917 6.509 L 10.445 6.681 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                                <group android:name="c_link_17">
+                                    <group android:name="c_22">
+                                        <group android:name="t_link_22">
+                                            <path
+                                                android:name="t_45"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 9.17 6.323 L 10.281 6.323 L 10.281 6.879 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="a_link_4">
+                                <group android:name="a_9">
+                                    <group android:name="c_link_18">
+                                        <group android:name="c_23">
+                                            <group android:name="t_link_23">
+                                                <path
+                                                    android:name="t_47"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 11.283 6.323 L 10.172 6.323 L 10.172 6.879 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="c_link_19">
+                                        <group android:name="c_24">
+                                            <group android:name="t_link_24">
+                                                <path
+                                                    android:name="t_49"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 10.226 5.556 L 9.883 6.612 L 10.412 6.784 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="s_link_5">
+                        <group android:name="s_5">
+                            <group android:name="c_25">
+                                <group android:name="t_link_25">
+                                    <path
+                                        android:name="t_51"
+                                        android:fillColor="#FFCC00"
+                                        android:pathData="M 11.283 12.99 L 10.384 13.643 L 10.058 13.194 Z"
+                                        android:strokeWidth="1" />
+                                </group>
+                            </group>
+                            <group android:name="a_10">
+                                <group android:name="c_link_20">
+                                    <group android:name="c_26">
+                                        <group android:name="t_link_26">
+                                            <path
+                                                android:name="t_53"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 10.88 14.232 L 9.981 13.579 L 10.307 13.13 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                                <group android:name="c_link_21">
+                                    <group android:name="c_27">
+                                        <group android:name="t_link_27">
+                                            <path
+                                                android:name="t_55"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 9.573 14.232 L 9.917 13.176 L 10.445 13.347 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="a_link_5">
+                                <group android:name="a_11">
+                                    <group android:name="c_link_22">
+                                        <group android:name="c_28">
+                                            <group android:name="t_link_28">
+                                                <path
+                                                    android:name="t_57"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 10.226 12.222 L 9.883 13.279 L 10.412 13.451 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="c_link_23">
+                                        <group android:name="c_29">
+                                            <group android:name="t_link_29">
+                                                <path
+                                                    android:name="t_59"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 9.17 12.99 L 10.069 13.643 L 10.395 13.194 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                    </group>
+                    <group android:name="s_link_6">
+                        <group android:name="s_6">
+                            <group android:name="c_30">
+                                <group android:name="t_link_30">
+                                    <path
+                                        android:name="t_61"
+                                        android:fillColor="#FFCC00"
+                                        android:pathData="M 13.723 15.43 L 12.824 16.083 L 12.498 15.634 Z"
+                                        android:strokeWidth="1" />
+                                </group>
+                            </group>
+                            <group android:name="a_12">
+                                <group android:name="c_link_24">
+                                    <group android:name="c_31">
+                                        <group android:name="t_link_31">
+                                            <path
+                                                android:name="t_63"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 13.32 16.672 L 12.421 16.019 L 12.747 15.57 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                                <group android:name="c_link_25">
+                                    <group android:name="c_32">
+                                        <group android:name="t_link_32">
+                                            <path
+                                                android:name="t_65"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 12.014 16.672 L 12.357 15.616 L 12.885 15.787 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                            <group android:name="a_link_6">
+                                <group android:name="a_13">
+                                    <group android:name="c_link_26">
+                                        <group android:name="c_33">
+                                            <group android:name="t_link_33">
+                                                <path
+                                                    android:name="t_67"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 12.667 14.662 L 12.323 15.719 L 12.852 15.891 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="c_link_27">
+                                        <group android:name="c_34">
+                                            <group android:name="t_link_34">
+                                                <path
+                                                    android:name="t_69"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 11.61 15.43 L 12.509 16.083 L 12.835 15.634 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                    </group>
+                </group>
+                <group android:name="l_link">
+                    <group android:name="l_1">
+                        <group android:name="s_link_7">
+                            <group android:name="s_7">
+                                <group android:name="t_link_35">
+                                    <path
+                                        android:name="t_71"
+                                        android:fillColor="#FFCC00"
+                                        android:pathData="M 22.667 8.889 L 22.323 9.946 L 22.852 10.117 Z"
+                                        android:strokeWidth="1" />
+                                </group>
+                                <group android:name="t_link_36">
+                                    <path
+                                        android:name="t_73"
+                                        android:fillColor="#FFCC00"
+                                        android:pathData="M 21.61 9.657 L 22.509 10.31 L 22.835 9.86 Z"
+                                        android:strokeWidth="1" />
+                                </group>
+                                <group android:name="t_link_37">
+                                    <path
+                                        android:name="t_75"
+                                        android:fillColor="#FFCC00"
+                                        android:pathData="M 22.014 10.899 L 22.912 10.246 L 22.586 9.796 Z"
+                                        android:strokeWidth="1" />
+                                </group>
+                                <group android:name="a_15">
+                                    <group android:name="t_link_38">
+                                        <path
+                                            android:name="t_77"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 23.723 9.657 L 22.824 10.31 L 22.498 9.86 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                    <group android:name="t_link_39">
+                                        <path
+                                            android:name="t_79"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 23.32 10.899 L 22.421 10.246 L 22.747 9.796 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                        <group android:name="s_link_8">
+                            <group android:name="s_8">
+                                <group android:name="t_link_40">
+                                    <path
+                                        android:name="t_81"
+                                        android:fillColor="#FFCC00"
+                                        android:pathData="M 19.986 5.125 L 19.643 4.069 L 19.115 4.24 Z"
+                                        android:strokeWidth="1" />
+                                </group>
+                                <group android:name="a_16">
+                                    <group android:name="t_link_41">
+                                        <path
+                                            android:name="t_83"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 20.39 3.883 L 19.279 3.883 L 19.279 4.439 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                    <group android:name="t_link_42">
+                                        <path
+                                            android:name="t_85"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 19.333 3.115 L 18.99 4.172 L 19.518 4.344 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                </group>
+                                <group android:name="a_link_8">
+                                    <group android:name="a_17">
+                                        <group android:name="t_link_43">
+                                            <path
+                                                android:name="t_87"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 18.68 5.125 L 19.024 4.069 L 19.552 4.24 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                        <group android:name="t_link_44">
+                                            <path
+                                                android:name="t_89"
+                                                android:fillColor="#FFCC00"
+                                                android:pathData="M 18.277 3.883 L 19.388 3.883 L 19.388 4.439 Z"
+                                                android:strokeWidth="1" />
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                        <group android:name="s_link_9">
+                            <group android:name="s_9">
+                                <group android:name="c_45">
+                                    <group android:name="t_link_45">
+                                        <path
+                                            android:name="t_91"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 21.12 7.566 L 22.019 6.912 L 21.693 6.463 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                </group>
+                                <group android:name="a_18">
+                                    <group android:name="c_link_36">
+                                        <group android:name="c_46">
+                                            <group android:name="t_link_46">
+                                                <path
+                                                    android:name="t_93"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 22.427 7.566 L 22.083 6.509 L 21.555 6.681 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="c_link_37">
+                                        <group android:name="c_47">
+                                            <group android:name="t_link_47">
+                                                <path
+                                                    android:name="t_95"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 22.83 6.323 L 21.719 6.323 L 21.719 6.879 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                                <group android:name="a_link_9">
+                                    <group android:name="a_19">
+                                        <group android:name="c_link_38">
+                                            <group android:name="c_48">
+                                                <group android:name="t_link_48">
+                                                    <path
+                                                        android:name="t_97"
+                                                        android:fillColor="#FFCC00"
+                                                        android:pathData="M 20.717 6.323 L 21.828 6.323 L 21.828 6.879 Z"
+                                                        android:strokeWidth="1" />
+                                                </group>
+                                            </group>
+                                        </group>
+                                        <group android:name="c_link_39">
+                                            <group android:name="c_49">
+                                                <group android:name="t_link_49">
+                                                    <path
+                                                        android:name="t_99"
+                                                        android:fillColor="#FFCC00"
+                                                        android:pathData="M 21.774 5.556 L 22.117 6.612 L 21.588 6.784 Z"
+                                                        android:strokeWidth="1" />
+                                                </group>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                        <group android:name="s_link_10">
+                            <group android:name="s_10">
+                                <group android:name="c_50">
+                                    <group android:name="t_link_50">
+                                        <path
+                                            android:name="t_101"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 20.717 12.99 L 21.616 13.643 L 21.942 13.194 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                </group>
+                                <group android:name="a_20">
+                                    <group android:name="c_link_40">
+                                        <group android:name="c_51">
+                                            <group android:name="t_link_51">
+                                                <path
+                                                    android:name="t_103"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 21.12 14.232 L 22.019 13.579 L 21.693 13.13 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="c_link_41">
+                                        <group android:name="c_52">
+                                            <group android:name="t_link_52">
+                                                <path
+                                                    android:name="t_105"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 22.427 14.232 L 22.083 13.176 L 21.555 13.347 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                                <group android:name="a_link_10">
+                                    <group android:name="a_21">
+                                        <group android:name="c_link_42">
+                                            <group android:name="c_53">
+                                                <group android:name="t_link_53">
+                                                    <path
+                                                        android:name="t_107"
+                                                        android:fillColor="#FFCC00"
+                                                        android:pathData="M 21.774 12.222 L 22.117 13.279 L 21.588 13.451 Z"
+                                                        android:strokeWidth="1" />
+                                                </group>
+                                            </group>
+                                        </group>
+                                        <group android:name="c_link_43">
+                                            <group android:name="c_54">
+                                                <group android:name="t_link_54">
+                                                    <path
+                                                        android:name="t_109"
+                                                        android:fillColor="#FFCC00"
+                                                        android:pathData="M 22.83 12.99 L 21.931 13.643 L 21.605 13.194 Z"
+                                                        android:strokeWidth="1" />
+                                                </group>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                        <group android:name="s_link_11">
+                            <group android:name="s_11">
+                                <group android:name="c_55">
+                                    <group android:name="t_link_55">
+                                        <path
+                                            android:name="t_111"
+                                            android:fillColor="#FFCC00"
+                                            android:pathData="M 18.277 15.43 L 19.176 16.083 L 19.502 15.634 Z"
+                                            android:strokeWidth="1" />
+                                    </group>
+                                </group>
+                                <group android:name="a_22">
+                                    <group android:name="c_link_44">
+                                        <group android:name="c_56">
+                                            <group android:name="t_link_56">
+                                                <path
+                                                    android:name="t_113"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 18.68 16.672 L 19.579 16.019 L 19.253 15.57 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group android:name="c_link_45">
+                                        <group android:name="c_57">
+                                            <group android:name="t_link_57">
+                                                <path
+                                                    android:name="t_115"
+                                                    android:fillColor="#FFCC00"
+                                                    android:pathData="M 19.986 16.672 L 19.643 15.616 L 19.115 15.787 Z"
+                                                    android:strokeWidth="1" />
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                                <group android:name="a_link_11">
+                                    <group android:name="a_23">
+                                        <group android:name="c_link_46">
+                                            <group android:name="c_58">
+                                                <group android:name="t_link_58">
+                                                    <path
+                                                        android:name="t_117"
+                                                        android:fillColor="#FFCC00"
+                                                        android:pathData="M 19.333 14.662 L 19.677 15.719 L 19.148 15.891 Z"
+                                                        android:strokeWidth="1" />
+                                                </group>
+                                            </group>
+                                        </group>
+                                        <group android:name="c_link_47">
+                                            <group android:name="c_59">
+                                                <group android:name="t_link_59">
+                                                    <path
+                                                        android:name="t_119"
+                                                        android:fillColor="#FFCC00"
+                                                        android:pathData="M 20.39 15.43 L 19.491 16.083 L 19.165 15.634 Z"
+                                                        android:strokeWidth="1" />
+                                                </group>
+                                            </group>
+                                        </group>
+                                    </group>
+                                </group>
+                            </group>
+                        </group>
+                    </group>
+                </group>
+            </group>
+        </group>
+    </group>
+</vector>

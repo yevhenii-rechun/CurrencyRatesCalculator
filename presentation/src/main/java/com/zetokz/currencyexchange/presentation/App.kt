@@ -1,7 +1,5 @@
 package com.zetokz.currencyexchange.presentation
 
-import android.content.Context
-import android.support.multidex.MultiDex
 import com.zetokz.currencyexchange.presentation.injection.AppComponent
 import com.zetokz.currencyexchange.presentation.injection.DaggerAppComponent
 import com.zetokz.currencyexchange.presentation.injection.applyAutoInjector
@@ -27,11 +25,6 @@ class App : DaggerApplication() {
         instance = this
 
         initDebugTools()
-    }
-
-    override fun attachBaseContext(base: Context) {
-        super.attachBaseContext(base)
-        MultiDex.install(this)
     }
 
     override fun applicationInjector() = DaggerAppComponent.builder()

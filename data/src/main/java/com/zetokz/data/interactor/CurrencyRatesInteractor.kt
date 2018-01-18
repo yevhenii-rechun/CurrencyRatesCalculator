@@ -19,13 +19,16 @@ class CurrencyRatesInteractor @Inject constructor(
 ) {
 
     private companion object {
-        private const val DEFAULT_REFRESH_PERIOD_SECONDS = 5L
+        private const val DEFAULT_REFRESH_PERIOD_SECONDS = 3L
     }
 
     private var baseCurrency = BehaviorSubject.create<String>()
+    private var requestStatus = BehaviorSubject.create<Boolean>()
 
     fun getCurrencies(base: String): Single<List<Currency>> =
         currencyRatesRepository.getCurrencies(base)
+            .doFinally { requestStatus.onNext(false) }
+            .also { requestStatus.onNext(true) }
 
     fun observeCurrencies(base: String): Flowable<List<Currency>> =
         baseCurrency
@@ -40,4 +43,7 @@ class CurrencyRatesInteractor @Inject constructor(
     fun changeBase(base: String) {
         baseCurrency.onNext(base)
     }
+
+    fun observeRequestStatus(): Flowable<Boolean> = requestStatus.toFlowable(BackpressureStrategy.LATEST)
+        .subscribeOn(Schedulers.io())
 }

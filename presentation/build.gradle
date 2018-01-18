@@ -70,17 +70,12 @@ dependencies {
     implementation appDependencies.daggerAndroidSupport
     kapt appDependencies.daggerAndroidProcessor
 
-    implementation appDependencies.glide
-    kapt appDependencies.glideCompiler
-
     implementation appDependencies.adapterDelegates
 
     implementation appDependencies.timber
 
     // Development
     implementation appDependencies.rxLint
-    implementation appDependencies.multiDex
-    debugImplementation appDependencies.debugDb
 
     // Tests
     testImplementation appDependencies.jUnitApi
