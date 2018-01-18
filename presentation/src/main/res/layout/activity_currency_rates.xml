@@ -30,7 +30,7 @@
             android:id="@+id/view_outdated"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:actionText="@string/action_reload"
+            app:actionText="@string/action_retry"
             app:text="@string/error_network_no_internet_connection" />
 
         <include

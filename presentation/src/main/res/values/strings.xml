@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">CurrencyExchange</string>
+
+    <string name="error_network_no_internet_connection">No internet connection!</string>
+    <string name="action_retry">Retry</string>
+
     <string name="currency_calculator_screen_input_hint">Enter value</string>
     <string name="currency_calculator_screen_content_desctiption_currency_flag">Currency country flag</string>
-    <string name="error_network_no_internet_connection">No internet connection!</string>
-    <string name="action_reload">Reload</string>
 
     <string name="currency_aud">Australian Dollar</string>
     <string name="currency_bgn">Bulgarian Lev</string>

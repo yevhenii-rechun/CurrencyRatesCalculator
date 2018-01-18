@@ -10,11 +10,16 @@ import com.zetokz.currencyexchange.presentation.model.CurrencyItem
  * Created by Yevhenii Rechun on 1/16/18.
  * Copyright © 2017. All rights reserved.
  */
+@StateStrategyType(AddToEndSingleStrategy::class)
 interface CurrencyRatesView : BaseView {
 
-    @StateStrategyType(AddToEndSingleStrategy::class)
     fun showCurrencies(currencyItems: List<CurrencyItem>)
 
-    @StateStrategyType(AddToEndSingleStrategy::class)
     fun showBase(currencyInputItem: CurrencyInputItem)
+
+    fun showOfflineView()
+
+    fun hideOfflineView()
+
+    fun toggleConnectionProgress(show: Boolean)
 }

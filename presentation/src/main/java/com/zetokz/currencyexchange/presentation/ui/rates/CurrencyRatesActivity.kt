@@ -24,7 +24,7 @@ import javax.inject.Inject
 class CurrencyRatesActivity : BaseActivity(), CurrencyRatesView {
 
     private val progress: ProgressBar by bindView(R.id.progress)
-    private val viewOutdated: FixedMessageView by bindView(R.id.view_outdated)
+    private val viewConnectionError: FixedMessageView by bindView(R.id.view_outdated)
     private val iconRateCountry: ImageView by bindView(R.id.icon_rate_country)
     private val textRateAbbreviation: TextView by bindView(R.id.text_rate_abbreviation)
     private val textRateDescription: TextView by bindView(R.id.text_rate_description)
@@ -46,6 +46,19 @@ class CurrencyRatesActivity : BaseActivity(), CurrencyRatesView {
         initToolbar()
         initAdapter()
         initViews()
+    }
+
+    override fun showOfflineView() {
+        if (viewConnectionError.isShown) viewConnectionError.shake() else viewConnectionError.show()
+    }
+
+    override fun hideOfflineView() {
+        viewConnectionError.dismiss()
+    }
+
+    override fun toggleConnectionProgress(show: Boolean) {
+        if (show) viewConnectionError.showProgress()
+        else viewConnectionError.hideProgress()
     }
 
     override fun showCurrencies(currencyItems: List<CurrencyItem>) {
@@ -80,6 +93,7 @@ class CurrencyRatesActivity : BaseActivity(), CurrencyRatesView {
         inputValue.addTextChangedListener(SimpleTextWatcher(afterTextChangedAction = {
             presenter.onMainCountChanged(it.toString().toDouble())
         }))
+        viewConnectionError.actionClickListener = presenter::onRetryConnectionClicked
     }
 
     private fun initToolbar() {
