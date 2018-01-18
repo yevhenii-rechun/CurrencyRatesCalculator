@@ -8,9 +8,8 @@ import java.math.BigDecimal
  */
 data class CurrencyItem(
     val currencyName: String,
-    val count: BigDecimal,
-    val info: CurrencyInfo?
+    val count: BigDecimal
 ) : Identifiable {
-    override val id: Long
-        get() = currencyName.hashCode().toLong()
+    val info: CurrencyInfo? = CurrencyInfo.getInfoByKey(currencyName)
+    override val id = currencyName.hashCode().toLong()
 }

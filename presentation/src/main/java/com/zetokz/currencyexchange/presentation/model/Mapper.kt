@@ -15,6 +15,5 @@ fun List<Currency>.toCurrencyItems(multiplier: Double, scale: Int = 3) = asSeque
 
 fun Currency.toCurrencyItem(multiplier: Double, scale: Int = 3) = CurrencyItem(
     currencyName,
-    BigDecimal(count * multiplier).setScale(scale, RoundingMode.UP),
-    CurrencyInfo.getInfoByKey(currencyName)
+    BigDecimal(count * multiplier).setScale(scale, RoundingMode.UP)
 )
