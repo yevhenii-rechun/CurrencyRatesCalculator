@@ -91,7 +91,7 @@ class CurrencyRatesActivity : BaseActivity(), CurrencyRatesView {
             })
         }
         inputValue.addTextChangedListener(SimpleTextWatcher(afterTextChangedAction = {
-            presenter.onMainCountChanged(it.toString().toDouble())
+            presenter.onBaseAmountChanged(it.toString().toDouble())
         }))
         viewConnectionError.actionClickListener = presenter::onRetryConnectionClicked
     }
