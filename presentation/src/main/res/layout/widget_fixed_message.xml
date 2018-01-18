@@ -40,7 +40,7 @@
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/action_reload"
+            android:text="@string/action_retry"
             android:textAllCaps="true"
             android:textAppearance="@style/Rates.TextAppearance.Regular.Bold"
             android:textColor="@color/yellow" />

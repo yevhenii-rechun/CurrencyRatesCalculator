@@ -5,14 +5,15 @@ import com.zetokz.currencyexchange.presentation.base.BasePresenter
 import com.zetokz.currencyexchange.presentation.model.CurrencyInputItem
 import com.zetokz.currencyexchange.presentation.model.CurrencyItem
 import com.zetokz.currencyexchange.presentation.model.toCurrencyItems
+import com.zetokz.currencyexchange.presentation.util.extension.minusAssign
 import com.zetokz.data.interactor.CurrencyRatesInteractor
 import com.zetokz.data.model.Currency
 import io.reactivex.BackpressureStrategy
 import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.Disposables
 import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.BehaviorSubject
-import timber.log.Timber
 import javax.inject.Inject
 
 /**
@@ -29,8 +30,12 @@ class CurrencyRatesPresenter @Inject constructor(
             field = value
             baseChanged()
         }
+    private var isOffline = false
     private var baseAmount = BehaviorSubject.createDefault(100.0)
     private var latestCurrencies = listOf<Currency>()
+
+    private var currenciesDisposable = Disposables.empty()
+    private var amountDisposable = Disposables.empty()
 
     override fun onFirstViewAttach() {
         observeCurrencies()
@@ -39,29 +44,39 @@ class CurrencyRatesPresenter @Inject constructor(
     }
 
     private fun observeAmountChanges() {
-        disposables += baseAmount.toFlowable(BackpressureStrategy.LATEST)
+        disposables -= amountDisposable
+        amountDisposable = baseAmount.toFlowable(BackpressureStrategy.LATEST)
             .distinctUntilChanged()
             .map { latestCurrencies.toCurrencyItems(it) }
             .filter { it.isNotEmpty() }
             .observeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(::handleCurrencyChanges, ::handleError)
+        disposables += amountDisposable
     }
 
     fun onCurrencyClicked(item: CurrencyItem) {
-        baseCurrency = item.currencyName
+        if (isOffline) viewState.showOfflineView()
+        else baseCurrency = item.currencyName
     }
 
     fun onMainCountChanged(baseAmount: Double) {
         this.baseAmount.onNext(baseAmount)
     }
 
+    fun onRetryConnectionClicked() {
+        viewState.toggleConnectionProgress(true)
+        observeCurrencies()
+    }
+
     private fun observeCurrencies() {
-        disposables += currencyRatesInteractor.observeCurrencies(baseCurrency)
+        disposables -= currenciesDisposable
+        currenciesDisposable = currencyRatesInteractor.observeCurrencies(baseCurrency)
             .doOnNext { latestCurrencies = it }
             .map { it.toCurrencyItems(baseAmount.value) }
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(::handleCurrencyChanges, ::handleError)
+        disposables += currenciesDisposable
     }
 
     private fun baseChanged() {
@@ -70,10 +85,14 @@ class CurrencyRatesPresenter @Inject constructor(
     }
 
     private fun handleCurrencyChanges(currencyItems: List<CurrencyItem>) {
+        isOffline = false
+        viewState.hideOfflineView()
         viewState.showCurrencies(currencyItems)
     }
 
     private fun handleError(throwable: Throwable) {
-        Timber.d(throwable)
+        isOffline = true
+        viewState.showOfflineView()
+        viewState.toggleConnectionProgress(false)
     }
 }
