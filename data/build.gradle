@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'de.mannodermaus.android-junit5'
 
 def globalConf = rootProject.ext
 
@@ -53,11 +52,4 @@ dependencies {
     kapt appDependencies.daggerAndroidProcessor
 
     implementation appDependencies.timber
-
-    // Tests
-    testImplementation appDependencies.jUnitApi
-    testCompileOnly appDependencies.jUnitEmbeddedRuntime
-    testImplementation appDependencies.mockitoCore
-    testImplementation appDependencies.mockitoKotlin
-
 }

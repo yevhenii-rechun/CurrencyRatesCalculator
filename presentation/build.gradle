@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'de.mannodermaus.android-junit5'
 
 def globalConf = rootProject.ext
 
@@ -76,10 +75,4 @@ dependencies {
 
     // Development
     implementation appDependencies.rxLint
-
-    // Tests
-    testImplementation appDependencies.jUnitApi
-    testCompileOnly appDependencies.jUnitEmbeddedRuntime
-    testImplementation appDependencies.mockitoCore
-    testImplementation appDependencies.mockitoKotlin
 }
