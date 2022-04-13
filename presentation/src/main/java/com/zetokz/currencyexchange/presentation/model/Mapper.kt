@@ -12,6 +12,7 @@ import java.math.RoundingMode
 fun List<Currency>.toCurrencyItems(multiplier: Double, scale: Int = 3) = asSequence()
     .map { it.toCurrencyItem(multiplier, scale) }
     .toList()
+    .sortedBy { it.currencyName }
 
 fun Currency.toCurrencyItem(multiplier: Double, scale: Int = 3) = CurrencyItem(
     currencyName,
