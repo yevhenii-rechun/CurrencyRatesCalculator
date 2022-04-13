@@ -61,7 +61,7 @@ class NetworkModule {
 
     @Provides @Singleton
     @Named("base-url")
-    internal fun provideBaseUrl() = "https://revolut.duckdns.org" //have to be moved to config file
+    internal fun provideBaseUrl() = "https://api.exchangerate.host" //have to be moved to config file
 
     @Provides @Singleton
     internal fun provideCurrencyRateService(retrofit: Retrofit) = retrofit.create(CurrencyRateService::class.java)
