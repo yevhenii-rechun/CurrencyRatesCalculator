@@ -15,7 +15,7 @@ ext {
     targetSdkVersion = 27
     compileSdkVersion = 27
 
-    gradlePlugin = "7.0.2"
+    gradlePlugin = "7.1.2"
     kotlinLanguage = "1.6.10"
 
     // Libraries
