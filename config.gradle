@@ -65,7 +65,7 @@ ext {
             constraintLayout      : "com.android.support.constraint:constraint-layout:$constraintLayout",
 
             // Kotlin
-            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlinLanguage",
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinLanguage",
 
             // Retrofit
             retrofit              : "com.squareup.retrofit2:retrofit:$retrofit",
